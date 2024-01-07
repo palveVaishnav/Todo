@@ -15,6 +15,7 @@ export function CreateTodo() {
     const [PopupOpen, setPopupOpen] = useState(false);
     const [popUpMsg, setPopupMessage] = useState("");
 
+    // eslint-disable-next-line react/prop-types
     function Popup({ m }) {
         return (
             <div>
