@@ -31,7 +31,7 @@ export function CreateTodo() {
 
     const addTodo = async () => {
         try {
-            await fetch("http://localhost:3000/todo", {
+            await fetch("https://todoapplication-u2ge.onrender.com", {
                 method: "POST",
                 body: JSON.stringify({
                     title: title,

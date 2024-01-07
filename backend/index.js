@@ -6,8 +6,6 @@ const { todo } = require("./db");
 const { nullable } = require("zod");
 const cors = require("cors");
 
-require("dotenv").config();
-
 // middleware
 const corsOptions = {
     origin: "https://todoapplication-f.onrender.com", // frontend URI (ReactJS)
