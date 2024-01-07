@@ -3,14 +3,17 @@
 const express = require("express");
 const { createTodo, updateTodo } = require("./types");
 const { todo } = require("./db");
-
-
-const cors = require("cors");
 const { nullable } = require("zod");
-const app = express();
+const cors = require("cors");
 
+require("dotenv").config();
+
+// middleware
+const corsOptions = {
+    origin: "https://todoapplication-f.onrender.com", // frontend URI (ReactJS)
+}
 app.use(express.json());
-app.use(cors());
+app.use(cors(corsOptions));
 
 
 app.post("/todo", async (req, res) => {
