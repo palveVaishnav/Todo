@@ -8,7 +8,7 @@ const cors = require("cors");
 
 // middleware
 const corsOptions = {
-    origin: "https://todoapplication-f.onrender.com", // frontend URI (ReactJS)
+    origin: "https://todoapplication-f.onrender.com" // frontend URI (ReactJS)
 }
 
 const app = express();
